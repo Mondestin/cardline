@@ -74,7 +74,7 @@ END:VCARD`;
 
             <ContactItem
               icon={Mail}
-              text="contact@locimoservices.com"
+              text="akanga@locimoservices.com"
               subtext="Professionnel"
               bgColor="bg-blue-50"
               iconColor="text-blue-500"
