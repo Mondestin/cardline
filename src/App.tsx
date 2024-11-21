@@ -39,7 +39,7 @@ END:VCARD`;
           <a href="tel:+33669352128" className="absolute left-1/2 -translate-x-1/2 -bottom-16 cursor-pointer hover:opacity-90 transition-opacity">
             <div className="w-32 h-32 rounded-full border-4 border-white overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=256&h=256&q=80" 
+                src="/img/ange.jpeg"
                 alt="Profile"
                 className="w-full h-full object-cover"
               />
