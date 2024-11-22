@@ -35,7 +35,12 @@ END:VCARD`;
       <div className="w-full max-w-md bg-white rounded-[2rem] shadow-lg overflow-hidden">
         {/* Header with blue background */}
         <div className="bg-[#1a237e] h-48 relative">
-          {/* Profile image that overlaps the blue section */}
+        <img
+            src="/img/logo.jpeg"
+            alt="Profile"
+            className="w-full h-full object-cover"
+          />
+
           <a href="tel:+33669352128" className="absolute left-1/2 -translate-x-1/2 -bottom-16 cursor-pointer hover:opacity-90 transition-opacity">
             <div className="w-32 h-32 rounded-full border-4 border-white overflow-hidden">
               <img 
@@ -50,19 +55,18 @@ END:VCARD`;
         {/* Content section */}
         <div className="pt-20 pb-8 px-8">
           {/* Name and title */}
-          <div className="text-center mb-10">
+          <div className="text-center mb-4">
             <h1 className="text-3xl font-bold text-gray-900">Ange KANGA</h1>
             <p className="text-xl text-gray-600 mt-2">Gérante</p>
-            <p className="text-xl text-gray-600">Locimo Services</p>
           </div>
 
           {/* Description */}
-          <p className="text-center text-gray-600 mb-12 leading-relaxed px-4">
+          <p className="text-center text-gray-600 mb-6 leading-relaxed px-4">
             Bonjour, je supervise les opérations et le développement de Locimo Services, assurant une gestion efficace des propriétés et des clés.
           </p>
 
           {/* Contact information */}
-          <div className="space-y-8 pl-6">
+          <div className="space-y-4 pl-6">
             <ContactItem
               icon={Phone}
               text="+33 669 352 128"
@@ -80,21 +84,10 @@ END:VCARD`;
               iconColor="text-blue-500"
               href="mailto:akanga@locimoservices.com"
             />
-
-            <ContactItem
-              icon={Globe}
-              text="locimoservices.com"
-              subtext="Entreprise"
-              bgColor="bg-green-50"
-              iconColor="text-green-500"
-              href="https://locimoservices.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            />
           </div>
 
           {/* Social section */}
-          <div className="mt-12">
+          <div className="mt-8">
             <p className="text-center text-gray-600 mb-4">Me retrouver sur</p>
             <div className="flex justify-center">
               <a 
@@ -113,7 +106,7 @@ END:VCARD`;
           {/* Add to contacts button */}
           <button 
             onClick={handleAddContact}
-            className="w-full mt-12 bg-[#1a237e] text-white py-4 rounded-xl flex items-center justify-center space-x-2 hover:bg-[#272f7a] transition-colors"
+            className="w-full mt-5 bg-[#1a237e] text-white py-4 rounded-xl flex items-center justify-center space-x-2 hover:bg-[#272f7a] transition-colors"
           >
             <Phone className="w-5 h-5" />
             <span className="text-lg">Ajouter aux contacts</span>
